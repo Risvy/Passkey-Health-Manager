@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Passkey Health Manager",
+  "version": "1.0.0",
+  "description": "A passkey manager with health auditing features.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  }
+}
