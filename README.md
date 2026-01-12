@@ -2,33 +2,6 @@
 
 A Chrome extension that helps users manage passkeys with health auditing features. Track passkey security, detect weak keys, monitor share counts, and maintain export history.
 
-![Health Audit Dashboard](img/Health%20Audit%20Results.png)
-
-## Overview
-
-Passkey Health Manager extends Bitwarden's functionality with advanced security monitoring and health auditing capabilities. It provides real-time insights into your passkey security posture, helping you maintain strong authentication practices.
-
-### Official vs Customized Interface
-
-<table>
-<tr>
-<td width="50%">
-
-**Official Bitwarden**
-
-![Official Bitwarden](img/Official%20Bitwarden.png)
-
-</td>
-<td width="50%">
-
-**Our Customized Version**
-
-![Customized Bitwarden](img/Our_Customized_Bitwarden.png)
-
-</td>
-</tr>
-</table>
-
 ## Features
 
 - **Passkey Management**: Store and manage passkeys for different websites
@@ -37,8 +10,6 @@ Passkey Health Manager extends Bitwarden's functionality with advanced security 
 - **Share Tracking**: Monitor how many times each passkey has been shared
 - **Export History**: Track vault exports with timestamps and destinations
 - **Security Dashboard**: Comprehensive analytics and security recommendations
-
-![Customized Health Audit Section](img/customized_health_audit%20section.png)
 
 ## Prerequisites
 
@@ -113,6 +84,29 @@ This will create a `dist/` folder with the compiled extension.
 4. Click **Confirm Export**
 5. All passkeys will have their share count incremented
 
+## Interface Comparison
+
+This extension extends Bitwarden's functionality with customized health monitoring features.
+
+<table>
+<tr>
+<td width="50%">
+
+**Official Bitwarden**
+
+![Official Bitwarden](img/Official%20Bitwarden.png)
+
+</td>
+<td width="50%">
+
+**Our Customized Version**
+
+![Customized Bitwarden](img/Our_Customized_Bitwarden.png)
+
+</td>
+</tr>
+</table>
+
 ## Security Features
 
 ### Weak Key Detection
@@ -142,6 +136,14 @@ The dashboard provides actionable recommendations:
 - **Critical**: Weak keys detected - recreate immediately
 - **Warning**: High share count (3+) - consider key rotation
 - **All Clear**: No immediate action required
+
+### Health Audit Dashboard
+
+![Customized Health Audit Section](img/customized_health_audit%20section.png)
+
+The health dashboard provides detailed insights into your passkey security:
+
+![Health Audit Results](img/Health%20Audit%20Results.png)
 
 ## Technology Stack
 
