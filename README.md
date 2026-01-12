@@ -2,6 +2,33 @@
 
 A Chrome extension that helps users manage passkeys with health auditing features. Track passkey security, detect weak keys, monitor share counts, and maintain export history.
 
+![Health Audit Dashboard](img/Health%20Audit%20Results.png)
+
+## Overview
+
+Passkey Health Manager extends Bitwarden's functionality with advanced security monitoring and health auditing capabilities. It provides real-time insights into your passkey security posture, helping you maintain strong authentication practices.
+
+### Official vs Customized Interface
+
+<table>
+<tr>
+<td width="50%">
+
+**Official Bitwarden**
+
+![Official Bitwarden](img/Official%20Bitwarden.png)
+
+</td>
+<td width="50%">
+
+**Our Customized Version**
+
+![Customized Bitwarden](img/Our_Customized_Bitwarden.png)
+
+</td>
+</tr>
+</table>
+
 ## Features
 
 - **Passkey Management**: Store and manage passkeys for different websites
@@ -10,6 +37,8 @@ A Chrome extension that helps users manage passkeys with health auditing feature
 - **Share Tracking**: Monitor how many times each passkey has been shared
 - **Export History**: Track vault exports with timestamps and destinations
 - **Security Dashboard**: Comprehensive analytics and security recommendations
+
+![Customized Health Audit Section](img/customized_health_audit%20section.png)
 
 ## Prerequisites
 
@@ -84,51 +113,6 @@ This will create a `dist/` folder with the compiled extension.
 4. Click **Confirm Export**
 5. All passkeys will have their share count incremented
 
-## Project Structure
-
-```
-passkey-health-manager/
-├── public/
-│   └── manifest.json          # Chrome extension manifest
-├── src/
-│   ├── background/
-│   │   └── index.ts          # Background service worker
-│   ├── popup/
-│   │   ├── App.tsx           # Main popup interface
-│   │   └── index.tsx         # Popup entry point
-│   ├── options/
-│   │   └── index.tsx         # Health dashboard page
-│   ├── services/
-│   │   ├── crypto.ts         # Cryptographic utilities
-│   │   └── storage.ts        # Chrome storage management
-│   ├── types/
-│   │   └── index.ts          # TypeScript type definitions
-│   └── index.css             # Global styles
-├── popup.html                # Popup HTML template
-├── options.html              # Options page HTML template
-├── package.json              # Dependencies and scripts
-├── tsconfig.json             # TypeScript configuration
-├── vite.config.ts            # Vite build configuration
-└── tailwind.config.js        # Tailwind CSS configuration
-```
-
-## Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build production version
-- `npm run preview` - Preview production build
-
-### Technology Stack
-
-- **React 18** - UI framework
-- **TypeScript** - Type-safe development
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first styling
-- **Chrome Extension API** - Browser integration
-- **Lucide React** - Icon library
-
 ## Security Features
 
 ### Weak Key Detection
@@ -158,6 +142,15 @@ The dashboard provides actionable recommendations:
 - **Critical**: Weak keys detected - recreate immediately
 - **Warning**: High share count (3+) - consider key rotation
 - **All Clear**: No immediate action required
+
+## Technology Stack
+
+- **React 18** - UI framework
+- **TypeScript** - Type-safe development
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **Chrome Extension API** - Browser integration
+- **Lucide React** - Icon library
 
 ## Testing Features
 
